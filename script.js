@@ -16,7 +16,6 @@ document.getElementById("subtract").addEventListener("click", ()=> {
 })
 
 submit.addEventListener("click", () => {
-
     answer.value = add(+num1.value)(+num2.value);
     }
 )

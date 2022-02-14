@@ -152,7 +152,7 @@ display: flex;
     font-size: 15px;
 }
 #fibonachi{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     color: #033985;
     border: none;
@@ -160,4 +160,16 @@ display: flex;
     height: 40px;
     border-radius: 10px;
 
+}
+#clearFibo{
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #033985;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-size: 15px;
 }

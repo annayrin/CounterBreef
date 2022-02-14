@@ -56,7 +56,10 @@ function fibo(n) {
 }
 let n = 0;
 document.getElementById("startFibo").addEventListener("click", ()=>{
-    document.getElementById("fibonachi").value += fibo(n);
-    console.log(fibo(n));
+    document.getElementById("fibonachi").value += fibo(n)+ " ";
     n++;
+})
+document.getElementById("clearFibo").addEventListener("click", () =>{
+    document.getElementById("fibonachi").value = "";
+    n=0;
 })

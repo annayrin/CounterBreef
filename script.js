@@ -45,6 +45,18 @@ function stopInterval(){
     interval.value="";
 }
 
-
 start.addEventListener("click", startInterval);
 stop.addEventListener("click", stopInterval);
+
+function fibo(n) {
+   if (n === 0 || n === 1) {return n;}
+   else {
+       return fibo(n - 1) + fibo(n - 2);
+   }
+}
+let n = 0;
+document.getElementById("startFibo").addEventListener("click", ()=>{
+    document.getElementById("fibonachi").value += fibo(n);
+    console.log(fibo(n));
+    n++;
+})

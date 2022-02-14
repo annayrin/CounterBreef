@@ -34,7 +34,7 @@ clear.addEventListener("click", () => {
 
 let intro;
 
-function startTimeout() {
+function startInterval() {
       intro = setInterval(() => {
          interval.value++;
      }, 1000)
@@ -46,5 +46,5 @@ function stopInterval(){
 }
 
 
-start.addEventListener("click", startTimeout);
+start.addEventListener("click", startInterval);
 stop.addEventListener("click", stopInterval);

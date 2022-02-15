@@ -139,6 +139,7 @@ display: flex;
 
 }
 .item7{
+    gap: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,13 +147,12 @@ display: flex;
 
 #startFibo, #addFibo{
     cursor: pointer;
-    margin: 5px;
     border: none;
     color: #ffffff;
     background-color: #033985;
     border-radius: 10px;
     height: 40px;
-    width: 80px;
+    width: 70px;
     text-align: center;
     font-size: 15px;
 }
@@ -167,21 +167,22 @@ display: flex;
     border-radius: 10px;
 
 }
-#clearFibo{
+#clearFibo, #stopFibo{
     cursor: pointer;
-    margin: 5px;
     border: none;
     color: #ffffff;
     background-color: #033985;
     border-radius: 10px;
     height: 40px;
-    width: 80px;
+    width: 70px;
     text-align: center;
     font-size: 18px;
 }
 
-#clearFibo:hover, #startFibo:hover, #stop:hover, #start:hover, .buttons:hover, #clear:hover, #add:hover, #subtract:hover {
-    background-color: #ebf1ff;
+#clearFibo:hover, #startFibo:hover, #stop:hover,
+#start:hover, .buttons:hover, #clear:hover,
+#add:hover, #subtract:hover,#addFibo:hover,#stopFibo:hover {
+    background-color: #ffffff;
     transition-duration: 0.4s;
     color: #033985;
 

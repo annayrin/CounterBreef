@@ -91,7 +91,7 @@ function startNewInterval() {
     }, 1000)
 }
 
-function stopNewInterval(){
+function endNewInterval(){
     if (introNew) {
         clearInterval(introNew);
     }
@@ -99,9 +99,17 @@ function stopNewInterval(){
     n=0;
 }
 
+function stopNewInterval(){
+    if (introNew) {
+        clearInterval(introNew);
+    }
+}
+document.getElementById("stopFibo").addEventListener("click", stopNewInterval);
+
+
 document.getElementById("addFibo").addEventListener("click", ()=>{
     document.getElementById("fibonachi").value += fibo(n)+ " ";
     n++;
 })
 document.getElementById("startFibo").addEventListener("click", startNewInterval)
-document.getElementById("clearFibo").addEventListener("click", stopNewInterval)
+document.getElementById("clearFibo").addEventListener("click", endNewInterval)

@@ -116,8 +116,14 @@ document.getElementById("startFibo").addEventListener("click", startNewInterval)
 document.getElementById("clearFibo").addEventListener("click", endNewInterval);
 
 document.getElementById("theme").addEventListener("click",()=>{
-    container.classList.remove("light");
-    container.classList.add("dark");
-    theme.innerHTML="Light Mode";
-
+   if(container.classList.contains("light")) {
+       container.classList.remove("light");
+       container.classList.add("dark");
+       theme.innerHTML = "Light Mode";
+   }
+   else{
+       container.classList.add("light");
+       container.classList.remove("dark");
+       theme.innerHTML = "Dark Mode";
+   }
 })

@@ -10,7 +10,8 @@ let clear = document.getElementById("clear");
 let start = document.getElementById("start");
 let stop = document.getElementById("stop");
 let interval = document.getElementById("interval");
-
+let container = document.getElementById("container");
+let theme = document.getElementById("theme");
 document.getElementById("add").addEventListener("click", ()=> {
     quantity.value++;
 })
@@ -112,4 +113,11 @@ document.getElementById("addFibo").addEventListener("click", ()=>{
     n++;
 })
 document.getElementById("startFibo").addEventListener("click", startNewInterval)
-document.getElementById("clearFibo").addEventListener("click", endNewInterval)
+document.getElementById("clearFibo").addEventListener("click", endNewInterval);
+
+document.getElementById("theme").addEventListener("click",()=>{
+    container.classList.remove("light");
+    container.classList.add("dark");
+    theme.innerHTML="Light Mode";
+
+})

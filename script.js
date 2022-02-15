@@ -19,35 +19,35 @@ document.getElementById("subtract").addEventListener("click", ()=> {
 })
 
 addNum.addEventListener("click", () => {
-    answer.value = add(+num1.value)(+num2.value);
+    answer.value = add(num1.value)(num2.value);
     }
 )
 
 subtractNum.addEventListener("click", () => {
-        answer.value = subtract(+num1.value)(+num2.value);
+        answer.value = subtract(num1.value)(num2.value);
     }
 )
 
 multiplyNum.addEventListener("click", () => {
-        answer.value = multiply(+num1.value)(+num2.value);
+        answer.value = multiply(num1.value)(num2.value);
     }
 )
 
 divideNum.addEventListener("click", () => {
-        answer.value = divide(+num1.value)(+num2.value);
+        answer.value = divide(num1.value)(num2.value);
     }
 )
 function add(a) {
-    return (b) => a+b;
+    return (b) => Number(a) + Number(b);
 }
 function subtract(a) {
-    return (b) => a-b;
+    return (b) => a - b;
 }
 function multiply(a) {
-    return (b) => a*b;
+    return (b) => a * b;
 }
 function divide(a) {
-    return (b) => a+b;
+    return (b) => a / b;
 }
 
 clear.addEventListener("click", () => {

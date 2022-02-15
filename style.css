@@ -4,11 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#debb9c,#decba4);
+    background-image: linear-gradient(#cd1aa6,#dd2066);
 
 }
 
 #grid{
+    font-family: sans-serif;
     gap:5px;
     height: 90%;
     width: 90%;
@@ -25,7 +26,7 @@
 }
 
 .item2{
-    color: #484848;
+    color: #ffffff;
     font-size: 120px;
     background: none;
     border: none;

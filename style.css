@@ -21,6 +21,7 @@
     cursor: pointer;
     border-radius: 20px;
     color:white;
+    font-size: 17px;
 }
 #grid{
     font-family: sans-serif;

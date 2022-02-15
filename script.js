@@ -79,12 +79,29 @@ function fibo(n) {
        return fibo(n - 1) + fibo(n - 2);
    }
 }
+
 let n = 0;
-document.getElementById("startFibo").addEventListener("click", ()=>{
+
+let introNew;
+
+function startNewInterval() {
+    introNew = setInterval(() => {
+        document.getElementById("fibonachi").value += fibo(n)+ " ";
+        n++;
+    }, 1000)
+}
+
+function stopNewInterval(){
+    if (introNew) {
+        clearInterval(introNew);
+    }
+    document.getElementById("fibonachi").value ="";
+    n=0;
+}
+
+document.getElementById("addFibo").addEventListener("click", ()=>{
     document.getElementById("fibonachi").value += fibo(n)+ " ";
     n++;
 })
-document.getElementById("clearFibo").addEventListener("click", () =>{
-    document.getElementById("fibonachi").value = "";
-    n=0;
-})
+document.getElementById("startFibo").addEventListener("click", startNewInterval)
+document.getElementById("clearFibo").addEventListener("click", stopNewInterval)

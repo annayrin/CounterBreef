@@ -89,7 +89,7 @@ display: flex;
     background-color:#033985 ;
     color: white;
     font-size: 20px;
-    margin-left: 10px;
+
 
 }
 .item5{
@@ -144,7 +144,7 @@ display: flex;
     align-items: center;
 }
 
-#startFibo{
+#startFibo, #addFibo{
     cursor: pointer;
     margin: 5px;
     border: none;
@@ -161,7 +161,7 @@ display: flex;
     text-align: center;
     color: #033985;
     border: none;
-    width: 180px;
+    width: 200px;
     height: 40px;
     border-radius: 10px;
 
@@ -176,10 +176,10 @@ display: flex;
     height: 40px;
     width: 80px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
-#clearFibo:hover, #startFibo:hover, #stop:hover, #start:hover, #submit:hover, #clear:hover, #add:hover, #subtract:hover {
+#clearFibo:hover, #startFibo:hover, #stop:hover, #start:hover, .buttons:hover, #clear:hover, #add:hover, #subtract:hover {
     background-color: #ebf1ff;
     transition-duration: 0.4s;
     color: #033985;

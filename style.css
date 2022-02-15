@@ -42,10 +42,10 @@
 #add, #subtract {
     cursor: pointer;
     margin: 20px;
-    border: none;
+    border: 1px solid white;
     color: #ffffff;
-    background-color: #033985;
-    border-radius: 10px;
+    background-image: linear-gradient(#d91f76,#d11b95);
+    border-radius: 20px;
     height: 50px;
     width: 170px;
     text-align: center;
@@ -87,8 +87,9 @@ display: flex;
     width: 90px;
     border-radius: 10px;
     cursor: pointer;
-    background-color:#033985 ;
-    color: white;
+    border: 1px solid white;
+    color: #ffffff;
+    background-image: linear-gradient(#d91f76,#d11b95);
     font-size: 20px;
 
 
@@ -105,8 +106,9 @@ display: flex;
     width: 80px;
     border-radius: 10px;
     cursor: pointer;
-    background-color:#033985 ;
-    color: white;
+    border: 1px solid white;
+    color: #ffffff;
+    background-image: linear-gradient(#d91f76,#d11b95);
     font-size: 30px;
     margin-left: 5px;
 }
@@ -119,9 +121,9 @@ display: flex;
 #stop, #start {
     cursor: pointer;
     margin: 5px;
-    border: none;
+    border: 1px solid white;
     color: #ffffff;
-    background-color: #033985;
+    background-image: linear-gradient(#d91f76,#d11b95);
     border-radius: 10px;
     height: 40px;
     width: 80px;
@@ -148,9 +150,9 @@ display: flex;
 
 #startFibo, #addFibo{
     cursor: pointer;
-    border: none;
+    border: 1px solid white;
     color: #ffffff;
-    background-color: #033985;
+    background-image: linear-gradient(#d91f76,#d11b95);
     border-radius: 10px;
     height: 40px;
     width: 70px;
@@ -170,9 +172,9 @@ display: flex;
 }
 #clearFibo, #stopFibo{
     cursor: pointer;
-    border: none;
+    border: 1px solid white;
     color: #ffffff;
-    background-color: #033985;
+    background-image: linear-gradient(#d91f76,#d11b95);
     border-radius: 10px;
     height: 40px;
     width: 70px;
@@ -183,8 +185,8 @@ display: flex;
 #clearFibo:hover, #startFibo:hover, #stop:hover,
 #start:hover, .buttons:hover, #clear:hover,
 #add:hover, #subtract:hover,#addFibo:hover,#stopFibo:hover {
-    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, #ffffff);
     transition-duration: 0.4s;
-    color: #033985;
+    color:#d91f76;
 
 }

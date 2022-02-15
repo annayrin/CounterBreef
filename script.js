@@ -2,7 +2,10 @@ let quantity = document.getElementById("quantity");
 let answer = document.getElementById("answer");
 let num1 = document.getElementById("num1");
 let num2 = document.getElementById("num2");
-let submit = document.getElementById("submit");
+let addNum = document.getElementById("addNum");
+let subtractNum = document.getElementById("subtractNum");
+let multiplyNum = document.getElementById("multiply");
+let divideNum = document.getElementById("divide");
 let clear = document.getElementById("clear");
 let start = document.getElementById("start");
 let stop = document.getElementById("stop");
@@ -15,12 +18,35 @@ document.getElementById("subtract").addEventListener("click", ()=> {
     quantity.value--;
 })
 
-submit.addEventListener("click", () => {
+addNum.addEventListener("click", () => {
     answer.value = add(+num1.value)(+num2.value);
     }
 )
 
+subtractNum.addEventListener("click", () => {
+        answer.value = subtract(+num1.value)(+num2.value);
+    }
+)
+
+multiplyNum.addEventListener("click", () => {
+        answer.value = multiply(+num1.value)(+num2.value);
+    }
+)
+
+divideNum.addEventListener("click", () => {
+        answer.value = divide(+num1.value)(+num2.value);
+    }
+)
 function add(a) {
+    return (b) => a+b;
+}
+function subtract(a) {
+    return (b) => a-b;
+}
+function multiply(a) {
+    return (b) => a*b;
+}
+function divide(a) {
     return (b) => a+b;
 }
 

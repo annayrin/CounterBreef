@@ -201,6 +201,6 @@ display: flex;
 #theme:hover{
     background-image: linear-gradient(#ffffff, #ffffff);
     transition-duration: 0.4s;
-    color:#d91f76;
+    color: #000929;
 
 }

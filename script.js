@@ -12,7 +12,9 @@ let stop = document.getElementById("stop");
 let interval = document.getElementById("interval");
 let container = document.getElementById("container");
 let theme = document.getElementById("theme");
-
+let span = document.getElementById("span");
+let spinner = document.getElementById("spinner");
+let spinning = document.getElementById("spinning");
 function Counter(x) {
 
     this.count = x;
@@ -77,13 +79,17 @@ let intro;
 
 function startInterval() {
       intro = setInterval(() => {
-         interval.value++;
+        // interval.value++;
+          span.value++;
+          spinning.classList.add("spin");
      }, 1000)
 }
 
 function stopInterval(){
     clearInterval(intro);
-    interval.value="";
+    //interval.value="";
+    span.value = "";
+    spinning.classList.remove("spin");
 }
 
 start.addEventListener("click", startInterval);

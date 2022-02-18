@@ -15,11 +15,13 @@ let theme = document.getElementById("theme");
 
 function Counter(x) {
 
+    this.count = x;
+
     this.up = function() {
-        return ++x;
+        return ++this.count;
     };
     this.down = function() {
-        return --x;
+        return --this.count;
     };
 }
 let newCounter = new Counter(quantity.value);

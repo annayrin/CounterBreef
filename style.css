@@ -200,7 +200,9 @@ display: flex;
 #add:hover, #subtract:hover,#addFibo:hover,#stopFibo:hover,
 #theme:hover{
     background-image: linear-gradient(#ffffff, #ffffff);
-    transition-duration: 0.4s;
-    color: #000929;
+    transition-duration: 0.8s;
+    color: #5c5247;
+    transform: scale(1.1);
+
 
 }

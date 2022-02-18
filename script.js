@@ -12,6 +12,7 @@ let stop = document.getElementById("stop");
 let interval = document.getElementById("interval");
 let container = document.getElementById("container");
 let theme = document.getElementById("theme");
+
 document.getElementById("add").addEventListener("click", ()=> {
     quantity.value++;
 })

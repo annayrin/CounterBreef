@@ -13,11 +13,23 @@ let interval = document.getElementById("interval");
 let container = document.getElementById("container");
 let theme = document.getElementById("theme");
 
-document.getElementById("add").addEventListener("click", ()=> {
-    quantity.value++;
-})
+function Counter(x) {
+
+    this.up = function() {
+        return ++x;
+    };
+    this.down = function() {
+        return --x;
+    };
+}
+let newCounter = new Counter(quantity.value);
+console.log(newCounter);
+
+document.getElementById("add").addEventListener("click",()=>{
+    quantity.value = newCounter.up();
+} )
 document.getElementById("subtract").addEventListener("click", ()=> {
-    quantity.value--;
+    quantity.value = newCounter.down();
 })
 
 addNum.addEventListener("click", () => {

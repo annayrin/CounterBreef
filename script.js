@@ -15,19 +15,9 @@ let theme = document.getElementById("theme");
 let span = document.getElementById("span");
 let spinner = document.getElementById("spinner");
 let spinning = document.getElementById("spinning");
-function Counter(x) {
 
-    this.count = x;
-
-    this.up = function() {
-        return ++this.count;
-    };
-    this.down = function() {
-        return --this.count;
-    };
-}
 let newCounter = new Counter(quantity.value);
-console.log(newCounter);
+
 
 document.getElementById("add").addEventListener("click",()=>{
     quantity.value = newCounter.up();
@@ -55,6 +45,22 @@ divideNum.addEventListener("click", () => {
         answer.value = divide(num1.value)(num2.value);
     }
 )
+start.addEventListener("click", startInterval);
+
+stop.addEventListener("click", stopInterval);
+
+function Counter(x) {
+
+    this.count = x;
+
+    this.up = function() {
+        return ++this.count;
+    };
+    this.down = function() {
+        return --this.count;
+    };
+}
+
 function add(a) {
     return (b) => Number(a) + Number(b);
 }
@@ -92,8 +98,7 @@ function stopInterval(){
     spinning.classList.remove("spin");
 }
 
-start.addEventListener("click", startInterval);
-stop.addEventListener("click", stopInterval);
+
 
 function fibo(n) {
    if (n === 0 || n === 1) {return n;}

@@ -45,9 +45,17 @@ divideNum.addEventListener("click", () => {
         answer.value = divide(num1.value)(num2.value);
     }
 )
+
 start.addEventListener("click", startInterval);
 
 stop.addEventListener("click", stopInterval);
+
+clear.addEventListener("click", () => {
+        answer.value = "";
+        num1.value = "";
+        num2.value = "";
+    }
+)
 
 function Counter(x) {
 
@@ -74,12 +82,7 @@ function divide(a) {
     return (b) => a / b;
 }
 
-clear.addEventListener("click", () => {
-        answer.value = "";
-        num1.value = "";
-        num2.value = "";
-    }
-)
+
 
 let intro;
 

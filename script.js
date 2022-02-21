@@ -15,6 +15,7 @@ let theme = document.getElementById("theme");
 let span = document.getElementById("span");
 let spinner = document.getElementById("spinner");
 let spinning = document.getElementById("spinning");
+let fiboNum = document.getElementById("fiboNum");
 
 let newCounter = new Counter(quantity.value);
 
@@ -110,14 +111,13 @@ function fibo(n) {
    }
 }
 
-let n = 0;
 
 let introNew;
 
 function startNewInterval() {
     introNew = setInterval(() => {
-        document.getElementById("fibonachi").value += fibo(n)+ " ";
-        n++;
+        document.getElementById("fibonachi").value += fibo(+fiboNum.value) + " ";
+        fiboNum.value++;
     }, 1000)
 }
 
@@ -126,7 +126,7 @@ function endNewInterval(){
         clearInterval(introNew);
     }
     document.getElementById("fibonachi").value ="";
-    n=0;
+    fiboNum.value = 0;
 }
 
 function stopNewInterval(){
@@ -138,8 +138,8 @@ document.getElementById("stopFibo").addEventListener("click", stopNewInterval);
 
 
 document.getElementById("addFibo").addEventListener("click", ()=>{
-    document.getElementById("fibonachi").value += fibo(n)+ " ";
-    n++;
+    document.getElementById("fibonachi").value += fibo(+fiboNum.value)+ " ";
+    fiboNum.value++;
 })
 document.getElementById("startFibo").addEventListener("click", startNewInterval)
 document.getElementById("clearFibo").addEventListener("click", endNewInterval);
